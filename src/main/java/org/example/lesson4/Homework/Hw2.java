@@ -10,10 +10,10 @@ public class Hw2 {
         System.out.println("Введите скобочки");
         String text1 = scanner.nextLine();
         scanner.close();
-        System.out.println(check(text1));
+        System.out.println(isValid(text1));
     }
 
-    public static boolean check(String s) {
+    public static boolean isValid(String s) {
         Deque<Character> list = new LinkedList<>();
         for (int i = 0; i < s.length(); i++) {
             if (s.charAt(i) == '(' ||
